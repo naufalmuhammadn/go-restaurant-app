@@ -1,0 +1,3 @@
+Pada parameter getFoodMenu, echo.Context biasanya berisi informasi dan metode yang berkaitan dengan permintaan HTTP yang sedang ditangani,
+seperti parameter rute, body permintaan, header, dan lainnya. 
+Dalam fungsi tersebut, echo.Context digunakan untuk mengakses informasi permintaan dan mengembalikan respons.
