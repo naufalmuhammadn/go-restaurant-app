@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	dbAddress = "host=localhost port=5432 user=postgres password=Abangadit29 dbname=go_resto_app sslmode=disable"
+	dbAddress = "host=localhost port=5432 user=postgres password=12345 dbname=go_resto_app sslmode=disable"
 )
 
 func main() {
