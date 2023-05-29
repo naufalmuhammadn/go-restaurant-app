@@ -3,7 +3,6 @@ package menu
 import (
 	"gorm.io/gorm"
 	"github.com/naufalmuhammadn/go-restaurant-app.git/internal/model"
-	"github.com/naufalmuhammadn/go-restaurant-app.git/internal/model/constant"
 )
 
 type menuRepo struct {
@@ -20,7 +19,7 @@ func GetRepository(db *gorm.DB) Repository {
 func (m *menuRepo) GetMenu(menuType string) ([]model.MenuItem, error) {
 	var menuData []model.MenuItem
 
-	if err := m.db.Where(model.MenuItem{Type: constant.MenuType(menuType)}).Find(&menuData).Error; err != nil {
+	if err := m.db.Where(model.MenuItem{Type: model.MenuType(menuType)}).Find(&menuData).Error; err != nil {
 		return nil, err
 	}
 
